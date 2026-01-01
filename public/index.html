@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather API Demo</title>
+</head>
+<body>
+
+<h2>Weather API Demo</h2>
+
+<hr>
+
+<h3>1. Get weather for a specific city</h3>
+<form action="/api/weather/Astana" method="get">
+    <button type="submit">Get Weather: Astana</button>
+</form>
+
+<form action="/api/weather/Almaty" method="get">
+    <button type="submit">Get Weather: Almaty</button>
+</form>
+
+<hr>
+
+<h3>2. Add city to favorites</h3>
+<form action="/api/weather" method="post">
+    <input type="hidden" name="city" value="Astana">
+    <button type="submit">Add Astana to Favorites</button>
+</form>
+
+<form action="/api/weather" method="post">
+    <input type="hidden" name="city" value="Almaty">
+    <button type="submit">Add Almaty to Favorites</button>
+</form>
+
+<hr>
+
+<h3>3. Get weather for all favorite cities</h3>
+<form action="/api/weather" method="get">
+    <button type="submit">Get All Favorites Weather</button>
+</form>
+
+<hr>
+
+<h3>4. Update favorites order</h3>
+<form action="/api/weather/Astana" method="post">
+    <input type="hidden" name="_method" value="put">
+    <button type="submit">Update Cities Order</button>
+</form>
+
+<hr>
+
+<h3>5. Delete city from favorites</h3>
+<form action="/api/weather/Astana" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <button type="submit">Delete Astana from Favorites</button>
+</form>
+
+<hr>
+
+<h3>6. Users (Email + City)</h3>
+<form action="/api/users" method="get">
+    <button type="submit">Get All Users</button>
+</form>
+
+<form action="/api/users" method="post">
+    <input type="hidden" name="email" value="kimkarina1323@gmail.com">
+    <input type="hidden" name="city" value="Astana">
+    <button type="submit">Add User (Email + City)</button>
+</form>
+
+<hr>
+
+<p><b>Note:</b> This page is used only for API demonstration during defence.</p>
+
+</body>
+</html>
