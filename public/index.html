@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Weather API Demo</title>
+    <title>Assignment 2</title>
 </head>
 <body>
 
-<h2>Weather API Demo</h2>
+<h2>Assignment 2</h2>
 
 <hr>
 
@@ -18,7 +18,6 @@
     <button type="submit">Get Weather: Almaty</button>
 </form>
 
-<hr>
 
 <h3>2. Add city to favorites</h3>
 <form action="/api/weather" method="post">
@@ -31,14 +30,12 @@
     <button type="submit">Add Almaty to Favorites</button>
 </form>
 
-<hr>
 
 <h3>3. Get weather for all favorite cities</h3>
 <form action="/api/weather" method="get">
     <button type="submit">Get All Favorites Weather</button>
 </form>
 
-<hr>
 
 <h3>4. Update favorites order</h3>
 <form action="/api/weather/Astana" method="post">
@@ -46,7 +43,6 @@
     <button type="submit">Update Cities Order</button>
 </form>
 
-<hr>
 
 <h3>5. Delete city from favorites</h3>
 <form action="/api/weather/Astana" method="post">
@@ -54,7 +50,6 @@
     <button type="submit">Delete Astana from Favorites</button>
 </form>
 
-<hr>
 
 <h3>6. Users (Email + City)</h3>
 <form action="/api/users" method="get">
@@ -66,10 +61,6 @@
     <input type="hidden" name="city" value="Astana">
     <button type="submit">Add User (Email + City)</button>
 </form>
-
-<hr>
-
-<p><b>Note:</b> This page is used only for API demonstration during defence.</p>
 
 </body>
 </html>
